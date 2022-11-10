@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=block');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply box-border font-montserrat;
+  }
+  .page-center {
+    @apply 2xl:max-w-[1430px] xl:max-w-[1280px] max-w-full w-full px-4 mx-auto;
+  }
+}
+@layer utilities {
+  .slider-main .slick-slider .slick-arrow.slick-prev {
+    @apply h-10 bg-indigo-500;
+  }
+  .slider-main .slick-slider .slick-arrow.slick-next {
+    @apply h-10 bg-indigo-500;
+  }
+
+  .slick-slide {
+    @apply my-0 mx-3;
+  }
+
+  .slick-list {
+    @apply my-0 -mx-3;
+  }
+}
